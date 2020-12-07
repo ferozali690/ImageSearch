@@ -19,7 +19,7 @@ class SearchComponent extends React.Component {
     const { search } = this.state;
     return (
       <form onSubmit={(e)=>this.handleSubmit(e)}>
-        <input type="text" value={search} onChange={this.handleSearch} />
+        <input type="text" value={search} placeholder='Enter the text & press Enter' onChange={this.handleSearch} />
       </form>
     );
   }

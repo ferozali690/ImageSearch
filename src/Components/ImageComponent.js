@@ -1,10 +1,9 @@
 import React from "react";
 
 const ImageComponent = (props) => {
-  console.log(props);
   const { images } = props;
   return images.map((item) => (
-    <div>
+    <div key={item.id}>
       <img src={item.urls.regular} alt={item.alt_description}></img>
     </div>
   ));

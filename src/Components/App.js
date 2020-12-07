@@ -22,7 +22,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <h1>App</h1>
+        <h1>Image Search</h1>
         <SearchComponent onSearch={this.handleSearch} />
         <ImageComponent images={searchImages} />
       </div>
